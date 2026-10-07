@@ -1,0 +1,210 @@
+/* ================================
+   SAVED
+   ================================ */
+
+/* Saved Page */
+.saved-page {
+  width: 100%;
+  padding: 0 var(--space-md) var(--space-lg);
+}
+
+/* Saved Navigation */
+.saved-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.saved-navigation::-webkit-scrollbar {
+  display: none;
+}
+
+.saved-navigation a {
+  color: var(--text-color);
+  font-size: var(--font-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.saved-navigation a:hover {
+  background-color: var(--primary-light);
+  color: var(--dark-green);
+}
+
+/* Saved Header */
+.saved-header {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: var(--space-xl) var(--space-md) 0;
+}
+
+.saved-header h1 {
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: var(--space-xs);
+}
+
+.saved-header p {
+  color: var(--secondary-text);
+  font-size: var(--font-md);
+}
+
+/* Saved Posts */
+.saved-posts {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-md);
+}
+
+.saved-posts h2 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-bottom: var(--space-md);
+}
+
+/* Saved Post Card */
+.saved-post {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.saved-post-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-color: var(--primary-light);
+}
+
+.saved-post-content {
+  padding: var(--space-md);
+}
+
+.saved-post-user {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.saved-post-user img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-round);
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.saved-post-user strong {
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.saved-post-content p {
+  font-size: var(--font-sm);
+  color: var(--text-color);
+  line-height: 1.4;
+  margin-bottom: var(--space-xs);
+}
+
+.saved-post-content small {
+  font-size: var(--font-xs);
+  color: var(--secondary-text);
+}
+
+.saved-post-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.saved-post-actions button {
+  padding: 6px 16px;
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.saved-post-actions button:first-child {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+}
+
+.saved-post-actions button:first-child:hover {
+  background-color: var(--primary-hover);
+}
+
+.saved-post-actions button:last-child {
+  background-color: var(--white);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.saved-post-actions button:last-child:hover {
+  background-color: var(--secondary-background);
+}
+
+/* Saved Empty State */
+.saved-empty-state {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: var(--space-xl);
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.saved-empty-state h2 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-bottom: var(--space-sm);
+}
+
+.saved-empty-state p {
+  color: var(--secondary-text);
+}
+
+/* Saved Footer */
+.saved-footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-md);
+  text-align: center;
+}
+
+.saved-footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.saved-footer a:hover {
+  color: var(--primary-hover);
+}

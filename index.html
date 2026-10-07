@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Instagram Clone</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/stories.css">
+  <link rel="stylesheet" href="css/post.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/comments.css">
+  <link rel="stylesheet" href="css/notifications.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <div class="navbar-container">
+
+      <a href="index.html" class="navbar-logo">
+        Instagram
+      </a>
+
+      <div class="navbar-search">
+        <input
+          type="text"
+          placeholder="Search"
+        >
+      </div>
+
+      <div class="navbar-links">
+
+        <a href="index.html" class="navbar-link active">
+          <span class="navbar-icon">⌂</span>
+        </a>
+
+        <a href="pages/explore.html" class="navbar-link">
+          <span class="navbar-icon">⌕</span>
+        </a>
+
+        <a href="pages/create-post.html" class="navbar-link">
+          <span class="navbar-icon">＋</span>
+        </a>
+
+        <a href="pages/notifications.html" class="navbar-link">
+          <span class="navbar-icon">♡</span>
+        </a>
+
+        <a href="pages/messages.html" class="navbar-link">
+          <span class="navbar-icon">✉</span>
+        </a>
+
+        <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="pages/profile.html" class="navbar-profile">
+
+          <img
+            class="navbar-avatar"
+            src="https://i.pravatar.cc/100?img=1"
+            alt="Tahrim"
+          >
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- PAGE WRAPPER -->
+  <div class="page-wrapper">
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+
+        <!-- STORIES -->
+        <section class="stories-container">
+
+          <article class="story add-story">
+
+            <div class="story-avatar">
+
+              <img
+                src="https://i.pravatar.cc/100?img=1"
+                alt="Your Story"
+              >
+
+              <span class="add-story-icon">+</span>
+
+            </div>
+
+            <span class="story-name">
+              Your Story
+            </span>
+
+          </article>
+
+
+          <article class="story">
+
+            <div class="story-avatar">
+
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="Ali"
+              >
+
+            </div>
+
+            <span class="story-name">
+              Ali
+            </span>
+
+          </article>
+
+
+          <article class="story">
+
+            <div class="story-avatar">
+
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt="Sara"
+              >
+
+            </div>
+
+            <span class="story-name">
+              Sara
+            </span>
+
+          </article>
+
+        </section>
+
+
+        <!-- POST 1 -->
+        <article class="post">
+
+          <header class="post-header">
+
+            <div class="post-user">
+
+              <img
+                class="post-avatar"
+                src="https://i.pravatar.cc/100?img=1"
+                alt="Tahrim"
+              >
+
+              <span class="post-username">
+                Tahrim
+              </span>
+
+            </div>
+
+            <button
+              type="button"
+              class="post-more"
+            >
+              ⋯
+            </button>
+
+          </header>
+
+
+          <img
+            class="post-image"
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+            alt="Workspace"
+          >
+
+
+          <div class="post-content">
+
+            <div class="post-actions">
+
+              <button
+                type="button"
+                class="post-action like"
+              >
+                ♡
+              </button>
+
+              <button
+                type="button"
+                class="post-action"
+              >
+                ♧
+              </button>
+
+              <button
+                type="button"
+                class="post-action"
+              >
+                ➤
+              </button>
+
+              <button
+                type="button"
+                class="post-action save"
+              >
+                ♧
+              </button>
+
+            </div>
+
+
+            <div class="post-likes">
+              12 likes
+            </div>
+
+
+            <p class="post-caption">
+
+              <strong>Tahrim</strong>
+              My new workspace setup!
+
+            </p>
+
+
+            <a
+              href="#"
+              class="post-comments-link"
+            >
+              View all comments
+            </a>
+
+
+            <span class="post-date">
+              2 hours ago
+            </span>
+
+          </div>
+
+
+          <div class="post-comment-form">
+
+            <input
+              type="text"
+              placeholder="Add a comment..."
+            >
+
+            <button type="button">
+              Post
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- POST 2 -->
+        <article class="post">
+
+          <header class="post-header">
+
+            <div class="post-user">
+
+              <img
+                class="post-avatar"
+                src="https://i.pravatar.cc/100?img=2"
+                alt="Ali"
+              >
+
+              <span class="post-username">
+                Ali
+              </span>
+
+            </div>
+
+            <button
+              type="button"
+              class="post-more"
+            >
+              ⋯
+            </button>
+
+          </header>
+
+
+          <img
+            class="post-image"
+            src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+            alt="Photography"
+          >
+
+
+          <div class="post-content">
+
+            <div class="post-actions">
+
+              <button
+                type="button"
+                class="post-action like"
+              >
+                ♡
+              </button>
+
+              <button
+                type="button"
+                class="post-action"
+              >
+                ♧
+              </button>
+
+              <button
+                type="button"
+                class="post-action"
+              >
+                ➤
+              </button>
+
+              <button
+                type="button"
+                class="post-action save"
+              >
+                ♧
+              </button>
+
+            </div>
+
+
+            <div class="post-likes">
+              8 likes
+            </div>
+
+
+            <p class="post-caption">
+
+              <strong>Ali</strong>
+              Captured this beautiful moment.
+
+            </p>
+
+
+            <a
+              href="#"
+              class="post-comments-link"
+            >
+              View all comments
+            </a>
+
+
+            <span class="post-date">
+              5 hours ago
+            </span>
+
+          </div>
+
+
+          <div class="post-comment-form">
+
+            <input
+              type="text"
+              placeholder="Add a comment..."
+            >
+
+            <button type="button">
+              Post
+            </button>
+
+          </div>
+
+        </article>
+
+      </main>
+
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar">
+
+        <section class="card section">
+
+          <div class="post-user">
+
+            <img
+              class="post-avatar"
+              src="https://i.pravatar.cc/100?img=1"
+              alt="Tahrim"
+            >
+
+            <div>
+
+              <strong>
+                Tahrim
+              </strong>
+
+              <p>
+                Web Developer
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section class="card section">
+
+          <div class="post-content">
+
+            <strong>
+              Suggested for you
+            </strong>
+
+          </div>
+
+
+          <div class="post-header">
+
+            <div class="post-user">
+
+              <img
+                class="post-avatar"
+                src="https://i.pravatar.cc/100?img=2"
+                alt="Ali"
+              >
+
+              <span class="post-username">
+                Ali
+              </span>
+
+            </div>
+
+            <button type="button">
+              Follow
+            </button>
+
+          </div>
+
+
+          <div class="post-header">
+
+            <div class="post-user">
+
+              <img
+                class="post-avatar"
+                src="https://i.pravatar.cc/100?img=3"
+                alt="Sara"
+              >
+
+              <span class="post-username">
+                Sara
+              </span>
+
+            </div>
+
+            <button type="button">
+              Follow
+            </button>
+
+          </div>
+
+        </section>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</body>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/stories.js"></script>
+</html>

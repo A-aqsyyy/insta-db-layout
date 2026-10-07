@@ -1,0 +1,206 @@
+/* ================================
+   CREATE POST
+   ================================ */
+
+/* Create Post Page */
+.create-post-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: var(--navbar-height);
+  background-color: var(--secondary-background);
+}
+
+/* Create Post Navigation */
+.create-post-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.create-post-navigation a {
+  color: var(--text-color);
+  font-size: var(--font-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.create-post-navigation a:hover {
+  background-color: var(--primary-light);
+  color: var(--dark-green);
+}
+
+/* Create Post Header */
+.create-post-header {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-md);
+  text-align: center;
+}
+
+.create-post-header h1 {
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: var(--space-xs);
+}
+
+.create-post-header p {
+  color: var(--secondary-text);
+  font-size: var(--font-md);
+}
+
+/* Create Post Container / Form Card */
+.create-post-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  padding: 0 var(--space-md);
+}
+
+.create-post-form {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--space-sm);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: var(--font-sm);
+  background-color: var(--white);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(139, 207, 155, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: var(--font-family);
+}
+
+/* File Upload */
+.form-group input[type="file"] {
+  padding: 8px;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--primary-bg);
+  cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: var(--primary-color);
+}
+
+/* Post Preview */
+.post-preview {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.post-preview h2 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-bottom: var(--space-md);
+}
+
+.preview-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  padding: var(--space-lg);
+}
+
+.preview-box p {
+  color: var(--secondary-text);
+  text-align: center;
+}
+
+/* Form Actions */
+.create-post-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: flex-end;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Cancel Button */
+.cancel-button {
+  padding: 10px 24px;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: var(--secondary-background);
+}
+
+/* Publish Button */
+.publish-button {
+  padding: 10px 24px;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: background-color 0.2s ease;
+}
+
+.publish-button:hover {
+  background-color: var(--primary-hover);
+}

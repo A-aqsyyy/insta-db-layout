@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/saved.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link active"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="notifications-page">
+        <section class="notifications-header">
+            <h1>Notifications</h1>
+            <button type="button" class="mark-all-read">Mark All as Read</button>
+        </section>
+
+        <section class="notifications-list">
+            <h2>Recent Activity</h2>
+
+            <article class="notification-item">
+                <img src="https://i.pravatar.cc/50?img=2" alt="Ali profile picture" class="notification-avatar">
+                <div class="notification-content">
+                    <p class="notification-message"><span class="notification-username">Ali</span> liked your post.</p>
+                    <small class="notification-time">5 minutes ago</small>
+                </div>
+                <button type="button" class="notification-follow-button">View Post</button>
+            </article>
+
+            <article class="notification-item">
+                <img src="https://i.pravatar.cc/50?img=3" alt="Sara profile picture" class="notification-avatar">
+                <div class="notification-content">
+                    <p class="notification-message"><span class="notification-username">Sara</span> started following you.</p>
+                    <small class="notification-time">20 minutes ago</small>
+                </div>
+                <button type="button" class="notification-follow-button">View Profile</button>
+            </article>
+
+            <article class="notification-item">
+                <img src="https://i.pravatar.cc/50?img=2" alt="Ali profile picture" class="notification-avatar">
+                <div class="notification-content">
+                    <p class="notification-message"><span class="notification-username">Ali</span> commented on your post.</p>
+                    <small class="notification-time">1 hour ago</small>
+                </div>
+                <button type="button" class="notification-follow-button">View Comment</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/notifications.js"></script>
+</body>
+</html>

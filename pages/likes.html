@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/saved.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link active"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="likes-page">
+        <section class="likes-header">
+            <h1>Likes</h1>
+            <p>Posts you've liked.</p>
+        </section>
+
+        <section class="likes-list">
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-user">
+                        <img class="post-avatar" src="https://i.pravatar.cc/100?img=2" alt="Ali">
+                        <span class="post-username">Ali</span>
+                    </div>
+                    <button type="button" class="post-more">&#8942;</button>
+                </header>
+                <img class="post-image" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" alt="Photography">
+                <div class="post-content">
+                    <div class="post-actions">
+                        <button type="button" class="post-action like active">&#9829;</button>
+                        <button type="button" class="post-action">&#9830;</button>
+                        <button type="button" class="post-action">&#10148;</button>
+                        <button type="button" class="post-action save">&#9830;</button>
+                    </div>
+                    <div class="post-likes">24 likes</div>
+                    <p class="post-caption"><strong>Ali</strong> Captured this beautiful moment.</p>
+                    <a href="#" class="post-comments-link">View all comments</a>
+                    <span class="post-date">3 hours ago</span>
+                </div>
+                <div class="post-comment-form">
+                    <input type="text" placeholder="Add a comment...">
+                    <button type="button">Post</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-user">
+                        <img class="post-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim">
+                        <span class="post-username">Tahrim</span>
+                    </div>
+                    <button type="button" class="post-more">&#8942;</button>
+                </header>
+                <img class="post-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Workspace">
+                <div class="post-content">
+                    <div class="post-actions">
+                        <button type="button" class="post-action like active">&#9829;</button>
+                        <button type="button" class="post-action">&#9830;</button>
+                        <button type="button" class="post-action">&#10148;</button>
+                        <button type="button" class="post-action save">&#9830;</button>
+                    </div>
+                    <div class="post-likes">12 likes</div>
+                    <p class="post-caption"><strong>Tahrim</strong> My new workspace setup!</p>
+                    <a href="#" class="post-comments-link">View all comments</a>
+                    <span class="post-date">2 hours ago</span>
+                </div>
+                <div class="post-comment-form">
+                    <input type="text" placeholder="Add a comment...">
+                    <button type="button">Post</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-user">
+                        <img class="post-avatar" src="https://i.pravatar.cc/100?img=3" alt="Sara">
+                        <span class="post-username">Sara</span>
+                    </div>
+                    <button type="button" class="post-more">&#8942;</button>
+                </header>
+                <img class="post-image" src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="UI Design">
+                <div class="post-content">
+                    <div class="post-actions">
+                        <button type="button" class="post-action like">&#9829;</button>
+                        <button type="button" class="post-action">&#9830;</button>
+                        <button type="button" class="post-action">&#10148;</button>
+                        <button type="button" class="post-action save">&#9830;</button>
+                    </div>
+                    <div class="post-likes">45 likes</div>
+                    <p class="post-caption"><strong>Sara</strong> Working on a new UI design.</p>
+                    <a href="#" class="post-comments-link">View all comments</a>
+                    <span class="post-date">1 day ago</span>
+                </div>
+                <div class="post-comment-form">
+                    <input type="text" placeholder="Add a comment...">
+                    <button type="button">Post</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/posts.js"></script>
+</body>
+</html>

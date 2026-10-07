@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link active"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="create-post-page">
+        <section class="create-post-header">
+            <h1>Create New Post</h1>
+            <p>Share a photo or video with your followers.</p>
+        </section>
+
+        <section class="create-post-container">
+            <form class="create-post-form">
+                <div class="form-group">
+                    <label for="media-type">Media Type</label>
+                    <select id="media-type" name="media-type">
+                        <option value="image">Image</option>
+                        <option value="video">Video</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="media-url">Image or Video URL</label>
+                    <input type="url" id="media-url" name="media-url" placeholder="Paste image or video URL">
+                </div>
+
+                <div class="form-group">
+                    <label for="media-file">Or Select a File</label>
+                    <input type="file" id="media-file" name="media-file" accept="image/*,video/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="caption">Caption</label>
+                    <textarea id="caption" name="caption" rows="5" placeholder="Write a caption..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Add a location">
+                </div>
+
+                <div class="form-group">
+                    <label for="visibility">Visibility</label>
+                    <select id="visibility" name="visibility">
+                        <option value="public">Public</option>
+                        <option value="followers">Followers</option>
+                    </select>
+                </div>
+
+                <div class="post-preview">
+                    <h2>Preview</h2>
+                    <div class="preview-box">
+                        <p>Your selected media will appear here.</p>
+                    </div>
+                </div>
+
+                <div class="create-post-actions">
+                    <button type="button" class="cancel-button">Cancel</button>
+                    <button type="submit" class="publish-button">Publish</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/create-post.js"></script>
+</body>
+</html>

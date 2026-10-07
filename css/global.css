@@ -1,0 +1,113 @@
+/* ================================
+   GLOBAL STYLES
+   ================================ */
+
+/* Body */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-md);
+  color: var(--text-color);
+  background-color: var(--secondary-background);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Links */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  line-height: 1.2;
+  margin: 0 0 var(--space-sm) 0;
+}
+
+/* Paragraph */
+p {
+  color: var(--text-color);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  outline: none;
+  background-color: var(--white);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

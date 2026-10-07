@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/saved.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="saved-page">
+        <section class="saved-header">
+            <h1>Saved Posts</h1>
+            <p>Posts you saved for later.</p>
+        </section>
+
+        <section class="saved-posts">
+            <h2>Your Saved Collection</h2>
+
+            <article class="saved-post">
+                <div class="saved-post-image">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Workspace">
+                </div>
+                <div class="saved-post-content">
+                    <div class="saved-post-user">
+                        <img src="https://i.pravatar.cc/50?img=1" alt="Tahrim profile picture">
+                        <strong>Tahrim</strong>
+                    </div>
+                    <p>My new workspace setup!</p>
+                    <small>Saved recently</small>
+                    <div class="saved-post-actions">
+                        <button type="button">View Post</button>
+                        <button type="button">Remove</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="saved-post">
+                <div class="saved-post-image">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="UI design">
+                </div>
+                <div class="saved-post-content">
+                    <div class="saved-post-user">
+                        <img src="https://i.pravatar.cc/50?img=3" alt="Sara profile picture">
+                        <strong>Sara</strong>
+                    </div>
+                    <p>Working on a new UI design.</p>
+                    <small>Saved yesterday</small>
+                    <div class="saved-post-actions">
+                        <button type="button">View Post</button>
+                        <button type="button">Remove</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="saved-post">
+                <div class="saved-post-image">
+                    <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d" alt="Photography">
+                </div>
+                <div class="saved-post-content">
+                    <div class="saved-post-user">
+                        <img src="https://i.pravatar.cc/50?img=2" alt="Ali profile picture">
+                        <strong>Ali</strong>
+                    </div>
+                    <p>Photography is all about light.</p>
+                    <small>Saved 2 days ago</small>
+                    <div class="saved-post-actions">
+                        <button type="button">View Post</button>
+                        <button type="button">Remove</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="saved-empty-state">
+            <h2>Save posts you want to see again</h2>
+            <p>Your saved posts will appear here.</p>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

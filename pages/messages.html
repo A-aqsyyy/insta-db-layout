@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/saved.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link active"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="messages-page">
+        <section class="messages-header" style="padding: var(--space-xl) var(--space-md) 0; max-width: 1100px; margin: 0 auto;">
+            <h1>Messages</h1>
+            <button type="button">New Message</button>
+        </section>
+
+        <section class="messages-container">
+            <aside class="conversations">
+                <div class="conversations-header">
+                    <h2 class="conversations-title">Chats</h2>
+                </div>
+
+                <div class="conversation-list">
+                    <article class="conversation">
+                        <img src="https://i.pravatar.cc/60?img=2" alt="Ali profile picture" class="conversation-avatar">
+                        <div class="conversation-info">
+                            <div class="conversation-name">Ali</div>
+                            <div class="conversation-preview">Hey! How are you?</div>
+                        </div>
+                        <small class="conversation-time">10 minutes ago</small>
+                    </article>
+
+                    <article class="conversation">
+                        <img src="https://i.pravatar.cc/60?img=3" alt="Sara profile picture" class="conversation-avatar">
+                        <div class="conversation-info">
+                            <div class="conversation-name">Sara</div>
+                            <div class="conversation-preview">Let me check and get back to you.</div>
+                        </div>
+                        <small class="conversation-time">1 hour ago</small>
+                    </article>
+                </div>
+            </aside>
+
+            <div class="chat">
+                <div class="chat-header">
+                    <div class="conversation-name">Ali</div>
+                </div>
+                <div class="chat-messages">
+                    <div class="message-bubble received">Hey! How are you?</div>
+                    <div class="message-bubble sent">I'm doing great, thanks!</div>
+                    <div class="message-bubble received">Want to grab coffee sometime?</div>
+                    <div class="message-bubble sent">Sure, let me know when!</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button type="button">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/messages.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Instagram Clone</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/comments.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/create-post.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/saved.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo">Instagram</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html" class="navbar-link"><span class="navbar-icon">&#8962;</span></a>
+                <a href="explore.html" class="navbar-link active"><span class="navbar-icon">&#8981;</span></a>
+                <a href="create-post.html" class="navbar-link"><span class="navbar-icon">+</span></a>
+                <a href="notifications.html" class="navbar-link"><span class="navbar-icon">&#9825;</span></a>
+                <a href="messages.html" class="navbar-link"><span class="navbar-icon">&#9993;</span></a>
+                <a href="login.html" class="navbar-link">Login</a>
+                <a href="signup.html" class="navbar-link">Sign up</a>
+                <a href="profile.html" class="navbar-profile"><img class="navbar-avatar" src="https://i.pravatar.cc/100?img=1" alt="Tahrim"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="explore-page">
+        <section class="explore-header">
+            <h1>Explore</h1>
+            <p>Discover new posts and people.</p>
+        </section>
+
+        <section class="explore-search">
+            <form class="search-form">
+                <input type="search" id="explore-search" name="search" placeholder="Search posts or users...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="explore-posts">
+            <h2>Discover Posts</h2>
+
+            <article class="explore-post">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Workspace">
+                <div class="explore-post-info">
+                    <strong>Tahrim</strong>
+                    <p>My new workspace setup!</p>
+                </div>
+            </article>
+
+            <article class="explore-post">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" alt="Photography">
+                <div class="explore-post-info">
+                    <strong>Ali</strong>
+                    <p>Captured this beautiful moment.</p>
+                </div>
+            </article>
+
+            <article class="explore-post">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="UI Design">
+                <div class="explore-post-info">
+                    <strong>Sara</strong>
+                    <p>Working on a new UI design.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/explore.js"></script>
+    <script src="../js/stories.js"></script>
+</body>
+</html>

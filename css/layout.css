@@ -1,0 +1,73 @@
+/* ================================
+   MAIN LAYOUT
+   ================================ */
+
+/* Main Page Wrapper */
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: var(--navbar-height);
+}
+
+/* Main Container */
+.main-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+
+/* Main Content */
+.main-content {
+  width: 100%;
+  max-width: 630px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+/* Generic Section */
+.section {
+  width: 100%;
+  margin-bottom: var(--space-lg);
+}
+
+/* Card */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Full Width */
+.full-width {
+  width: 100%;
+}
+
+/* Center Content */
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vertical Layout */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Space Between */
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

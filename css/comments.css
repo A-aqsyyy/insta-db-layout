@@ -1,0 +1,178 @@
+/* ================================
+   COMMENTS
+   ================================ */
+
+/* Comments Container */
+.comments-container {
+  width: 100%;
+  background-color: var(--white);
+  padding: var(--space-md);
+}
+
+/* Comments Header */
+.comments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+/* Comments Title */
+.comments-title {
+  font-size: var(--font-md);
+  font-weight: 600;
+}
+
+/* Close Comments Button */
+.comments-close {
+  font-size: 22px;
+  color: var(--secondary-text);
+}
+
+/* Single Comment */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Comment Avatar */
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: var(--radius-round);
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+/* Comment Body */
+.comment-body {
+  flex: 1;
+}
+
+/* Comment Text */
+.comment-text {
+  font-size: var(--font-sm);
+  line-height: 1.4;
+}
+
+/* Comment Username */
+.comment-username {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* Comment Date */
+.comment-date {
+  display: block;
+  margin-top: 3px;
+  font-size: var(--font-xs);
+  color: var(--secondary-text);
+}
+
+/* Comment Actions */
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xs);
+}
+
+/* Comment Action */
+.comment-action {
+  font-size: var(--font-xs);
+  color: var(--secondary-text);
+  font-weight: 600;
+}
+
+.comment-action:hover {
+  color: var(--text-color);
+}
+
+/* Comment Like */
+.comment-like {
+  margin-left: auto;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+
+.comment-like.active {
+  color: var(--danger-color);
+}
+
+/* Reply Comment */
+.comment-reply {
+  margin-left: 40px;
+}
+
+/* Comments List */
+.comments-list {
+  width: 100%;
+}
+
+/* Empty Comments */
+.comments-empty {
+  padding: var(--space-lg) 0;
+  text-align: center;
+  color: var(--secondary-text);
+  font-size: var(--font-sm);
+}
+
+/* Comment Form */
+.comment-form {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+/* Comment Form Input */
+.comment-form input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding: 8px 0;
+}
+
+.comment-form input:focus {
+  border: none;
+  outline: none;
+}
+
+/* Comment Submit Button */
+.comment-form button {
+  color: var(--primary-color);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  padding: 8px;
+}
+
+.comment-form button:hover {
+  color: var(--primary-hover);
+}
+
+/* Comment Modal */
+.comments-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Comments Modal Content */
+.comments-modal-content {
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow-y: auto;
+  box-shadow: var(--shadow-md);
+}
